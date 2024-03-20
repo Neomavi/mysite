@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@layer components {
+  input[type="checkbox"]:checked ~ label span svg {
+    @apply inline-flex;
+  }
+
+  .sticky .header-logo {
+    @apply py-5 lg:py-2;
+  }
+
+  .sticky .menu-scroll.active {
+    @apply opacity-70;
+  }
+
+  input#togglePlan:checked ~ .dot {
+    @apply translate-x-full;
+  }
+
+  input#checkboxLabel:checked ~ .box span {
+    @apply opacity-100;
+  }
+}
+
+/* Scrollbar-Styling */
+::-webkit-scrollbar {
+  width: 3px; /* Breite des Scrollbalkens */
+}
+
+/* Hintergrund des Scrollbalkens */
+::-webkit-scrollbar-track {
+  background: #fff; /* Hintergrundfarbe des Scrollbalkens */
+}
+
+/* Farbe des Scrollbalkens */
+::-webkit-scrollbar-thumb {
+  background-color: #4A6CF7; /* Primäre Farbe des Scrollbalkens */
+  border-radius: 5px; /* Abrundung des Scrollbalkens */
+}
+

@@ -1,0 +1,38 @@
+
+> startup-nextjs-template@0.2.0 build
+> next build
+
+   ▲ Next.js 14.0.4
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/12) ...
+   Generating static pages (3/12) 
+   Generating static pages (6/12) 
+   Generating static pages (9/12) 
+ ✓ Generating static pages (12/12) 
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    23.9 kB         118 kB
+├ ○ /_not-found                          869 B          82.8 kB
+├ ○ /about                               188 B          93.8 kB
+├ ○ /blog                                188 B          93.8 kB
+├ ○ /blog-details                        295 B          87.2 kB
+├ ○ /blog-sidebar                        4.03 kB        97.7 kB
+├ ○ /contact                             4.03 kB        92.7 kB
+├ ○ /error                               181 B          88.9 kB
+├ ○ /signin                              180 B          88.9 kB
+└ ○ /signup                              180 B          88.9 kB
++ First Load JS shared by all            81.9 kB
+  ├ chunks/938-f464a3b2301c5ba9.js       26.7 kB
+  ├ chunks/fd9d1056-516b58327fb05db5.js  53.3 kB
+  ├ chunks/main-app-203289f6a2baad4d.js  219 B
+  └ chunks/webpack-6b12efff6dbc547f.js   1.75 kB
+
+
+○  (Static)  prerendered as static content
+
